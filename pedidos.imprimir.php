@@ -121,6 +121,16 @@ include("incluidos/sessiones.php");
                 html += "</tr>";
             }
             document.getElementById("tabla-resultados").innerHTML = html;
+            //mostrar los totales
+            document.getElementById("totalcantidad").innerHTML = detalle[0]["totalcantidad"];
+            document.getElementById("subtotal").innerHTML = detalle[0]["subtotal"];
+            document.getElementById("iva").innerHTML = detalle[0]["iva"];
+            document.getElementById("total").innerHTML = detalle[0]["total"];
         }
+    }
+
+    function imprimir() {
+        document.getElementById("capa_impresion").style.display = "none";
+        window.print();
     }
 </script>
