@@ -1,0 +1,66 @@
+El objetivo es desarrollar un sistema de pedidos.
+
+Este sistema debe contener lo siguiente:
+
+1. Que se pueda loguear el usuario
+2. que se puedan crear productos
+3. que se puedan listar, seleccionar la cantidad y mostrar
+en un carrito o espacio donde se vea cuanto va acumulado
+4. poder ver el resultado y enviar por correo la cotizacion
+
+Plantillas que se debe tener en cuenta
+
+1. Acceso al sistema
+2. pagina principal
+3. pagina realizar pedido
+4. pagina ver pedido
+5. pagina ver resultado del pedido
+6. modulo de usuario
+    - ingresar, listar, modificar, eliminar
+7. modulo de productos
+    - ingresar, listar, modificar, eliminar
+
+
+Tablas a implementar
+
+1. usuarios
+    nombre
+    correo
+    clave
+    estado (1=activo,2=inactivo)
+    telefono
+    fecha de registro
+    fecha de modificacion
+
+2. productos
+    referencia
+    nombre
+    valor base
+    iva
+    descripcion
+    imagen
+    estado (1=activo,2=inactivo)
+    usuario
+
+3. encabezado pedido
+    consecutivo
+    nombre cliente
+    telefono cliente
+    direccion cliente
+    identificacion cliente
+    total unidades
+    subtotal
+    subtotaliva
+    total valor
+    fecha registro
+    usuario
+
+4. detalle pedido
+
+    numero de pedido
+    referencia
+    cantidad
+    precio unitario
+    subtotal
+    subtotaliva
+    total 
