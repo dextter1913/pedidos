@@ -120,6 +120,7 @@ include("incluidos/sessiones.php");
                 html += "<td>" + detalle[i]["subtotal"] + "</td>";
                 html += "</tr>";
             }
+            document.getElementById("tabla-resultados").innerHTML = html;
         }
     }
 </script>
